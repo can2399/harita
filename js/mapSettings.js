@@ -10,6 +10,11 @@ var iconDurum;
 var pulsingIconProgramDevam;
 var pulsingIconProgramBitti;
 var program;
+var ilceSinir;
+var legend;
+var info;
+var topluKatman;
+var geojson;
 
 $(document).ready(function(){
 
@@ -65,7 +70,7 @@ $(document).ready(function(){
         "Google Uydu"    : googleSat
     };
     
-    ellikm = L.circle([39.94185302152969,32.854474782943726], {radius:50000, color:"red", weight:2, fill:false}).bindPopup("Belediye ve Mücavir Alan Sınırı").openPopup().addTo(map);
+    
     /*
     ObjOverlays ={
         "Belediye ve Mücavir Alan Sınırı " : ellikm, 
@@ -76,7 +81,7 @@ $(document).ready(function(){
 
     // Program.js - Pulse Icon 
     pulsingIconProgramDevam = L.icon.pulse({iconSize:[20,20],color:'red',fillColor:'red',animate:true});
-    pulsingIconProgramBitti = L.icon.pulse({iconSize:[20,20],color:'#1d91c0',fillColor:'#1d91c0',animate:false});
+    pulsingIconProgramBitti = L.icon.pulse({iconSize:[20,20],color:'#1d91c0',fillColor:'#DFFF00',animate:false});
 
     console.log(program['features'].length);
 
@@ -132,7 +137,7 @@ $(document).ready(function(){
 
         //var program2 = L.geoJSON(program, {style: pulsingIconProgramDevam}).addTo(map);
 
-        var popup = L.popup();
+    var popup = L.popup();
 
     var blackIcon = L.icon({
         iconUrl: 'maps-and-flags.png',
@@ -151,18 +156,81 @@ $(document).ready(function(){
         onEachFeature: function(feature, layer){
             if(feature.geometry.type==='Point' && feature.properties.program==='devam'){
                 layer.setIcon(pulsingIconProgramDevam)
-                layer.bindTooltip('<b>'+ feature.properties.name + '</b><br>' + 'Programa Alınan Taşınmaz Sayısı : ' +'<b>'+ feature.properties.adet + '</b><br>'+ 'Tespiti Yapılan : '+'<br>'+'Durum : '+ '<br><b>'+ ''+'</b>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br>' + '<table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table>');
             }
             else if(feature.geometry.type==='Point' && feature.properties.program==='bitti'){
                 layer.setIcon(pulsingIconProgramBitti)
-                layer.bindTooltip('<b>'+ feature.properties.name + '</b><br>' + 'Programa Alınan Taşınmaz Sayısı : ' +'<b>'+ feature.properties.adet + '</b><br>'+ 'Tespiti Yapılan : '+'<br>'+'Durum : '+ '<br><b>'+ ''+'</b>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br>' + '<table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table>');
             }
         }
     }).addTo(map);
 
+    ilceSinir = L.geoJson(ilce, {fill:false, weight:1.5}).addTo(map);
+
+    geojson = L.geoJson(tasinmazBilgileri, {
+        style: style,
+        onEachFeature: onEachFeature
+      }).bindTooltip(function(layer){
+        return ('<h4>'+layer.feature.properties.name+'</h4>' + '<br>' +
+        '<table style="width:100%"><tr align="left"><th><u>Taşınmaz Tipi</u></th><th align="right"><u>Adet</u></th></tr><tr align="left"><td>DHTA           : </td><td align="right">'+layer.feature.properties.tasinmazSayilari.DHTA+'</td></tr><tr><td align="left">İlişikli       : </td><td align="right">'+ layer.feature.properties.tasinmazSayilari.ilisikli +'</td></tr><tr><td align="left">Tescilli       : </td><td align="right">'+ layer.feature.properties.tasinmazSayilari.tescilli +'</td></tr><tr><td align="left"><b>Genel Toplam : </b></td><td align="right"><b>'+ layer.feature.properties.tasinmazSayilari.genelToplam +'</b></td></tr></table>'+'<br><small>'+'(21.09.2021 tarihi itibariyle)</small>');
+      }).addTo(map);
+   
+    function getColor(d) {
+        return d > 10000 ? '#800026' :
+                d > 9000  ? '#bd0026' :
+                d > 8000  ? '#e31a1c' :
+                d > 7000  ? '#fc4e2a' :
+                d > 6000  ? '#fd8d3c' :
+                d > 5000  ? '#feb24c' :
+                d > 4000  ? '#fed976' :
+                d > 3000  ? '#ffeda0' :
+                d > 2000  ? '#FFEDA0' :
+                            '#ffffcc';
+    }
+    function style(feature) {
+        return {
+            weight: 2,
+            opacity: 1,
+            color: 'blue',
+            dashArray: '3',
+            fillOpacity: 0.7,
+            fillColor: getColor(feature.properties.tasinmazSayilari.genelToplam)
+        };
+    }
+    function highlightFeature(e) {
+        var layer = e.target;
+      
+        layer.setStyle({
+          weight: 5,
+          color: '#666',
+          dashArray: '',
+          fillOpacity: 0.7,
+        });
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+        }
+    }
+    function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+    }
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds());
+    }
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
+    ellikm = L.circle([39.94185302152969,32.854474782943726], {radius:50000, color:"red", weight:2, fill:false}).bindPopup("Belediye ve Mücavir Alan Sınırı").openPopup().bringToFront().addTo(map);
+    
     ObjOverlays ={
         "Belediye ve Mücavir Alan Sınırı " : ellikm, 
-        "Program Durumu " : program
+        "<b>Program Durumu </b>"           : program,
+        "İlçe Sınırları "                  : ilceSinir,
+        "Aktif Taşınmaz Sayıları"                : geojson
     }
 
     L.control.layers(baseLayers, ObjOverlays).addTo(map);
