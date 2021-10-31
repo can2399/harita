@@ -159,11 +159,11 @@ $(document).ready(function(){
         onEachFeature: function(feature, layer){
             if(feature.geometry.type==='Point' && feature.properties.program==='devam'){
                 layer.setIcon(pulsingIconProgramDevam)
-                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table><br /><small>(Son Güncelleme : 25.10.2021)</small>');
             }
             else if(feature.geometry.type==='Point' && feature.properties.program==='bitti'){
                 layer.setIcon(pulsingIconProgramBitti)
-                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr align="left"><td>Programa Alınan Taşınmaz Sayısı : </td><td align="right">'+feature.properties.tespitiYapilacak+'</td></tr><tr><td align="left">Tespiti Yapılan : </td><td align="right">'+ feature.properties.tespitiYapilan+'</td></tr><tr><td align="left">Tamamlanma Durumu : </td><td align="right"><b> % '+ Math.round((feature.properties.tespitiYapilan*100)/feature.properties.tespitiYapilacak) +'</b></td></tr></table><br /><small>(25.10.2021 tarihi itibariyle)</small>');
             }
         }
     }).addTo(map);
@@ -178,7 +178,7 @@ $(document).ready(function(){
         onEachFeature: function(feature, layer){
             if(feature.geometry.type==='Point' && feature.properties.program==='Program Dışı'){
                 layer.setIcon(pulsingIconProgramDisi)
-                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><th align="left">Tespiti Yapılan Taşınmazın Tipi&nbsp;&nbsp;</th><th align="right">&nbsp;Adet </th></tr><tr><td align="left">DHTA :</td><td align="right">'+ feature.properties.DHTA+'</td></tr><tr><td align="left">İlişik :</td><td align="right">'+ feature.properties.ilisik+'</td></tr><tr><td align="left">Tescilli :</td><td align="right">'+ feature.properties.tescilli+'</td></tr><tr><td align="left"><b>Toplam :</b></td><td align="right"><b>'+ (feature.properties.DHTA +feature.properties.ilisik+feature.properties.tescilli)+'</b></td></tr></table>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><th align="left">Tespiti Yapılan Taşınmazın Tipi&nbsp;&nbsp;</th><th align="right">&nbsp;Adet </th></tr><tr><td align="left">DHTA :</td><td align="right">'+ feature.properties.DHTA+'</td></tr><tr><td align="left">İlişik :</td><td align="right">'+ feature.properties.ilisik+'</td></tr><tr><td align="left">Tescilli :</td><td align="right">'+ feature.properties.tescilli+'</td></tr><tr><td align="left"><b>Toplam :</b></td><td align="right"><b>'+ (feature.properties.DHTA +feature.properties.ilisik+feature.properties.tescilli)+'</b></td></tr></table><br /><small>(27.10.2021 tarihi itibariyle)</small>');
             }
         }
     }).addTo(map);
@@ -193,7 +193,7 @@ $(document).ready(function(){
         onEachFeature: function(feature, layer){
             if(feature.geometry.type==='Point' && feature.properties.program==='Yapı Kayıt'){
                 layer.setIcon(pulsingIconYapiKayit)
-                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><td align="left">Tespiti Yapılan Yapı Kayıt Belgesi Sayısı : </td><td align="right">'+ feature.properties.adet+'</td></tr></table>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><td align="left">Tespiti Yapılan Yapı Kayıt Belgesi Sayısı : </td><td align="right">'+ feature.properties.adet+'</td></tr></table><br /><small>(25.10.2021 tarihi itibariyle)</small>');
             }
         }
     }).addTo(map);
@@ -208,7 +208,7 @@ $(document).ready(function(){
         onEachFeature: function(feature, layer){
             if(feature.geometry.type==='Point' && feature.properties.program==='Tescil'){
                 layer.setIcon(pulsingIconTescil)
-                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><td align="left">Tescil İncelemesi Yapılan Taşınmaz Sayısı : </td><td align="right">'+ feature.properties.adet+'</td></tr></table>');
+                layer.bindTooltip('<b>'+ feature.properties.ilce + ' / ' + feature.properties.mahalle + '</b><br><table style="width:100%"><tr><td align="left">Tescil İncelemesi Yapılan Taşınmaz Sayısı : </td><td align="right">'+ feature.properties.adet+'</td></tr></table><br /><small>(25.10.2021 tarihi itibariyle)</small>');
             }
         }
     }).addTo(map);
