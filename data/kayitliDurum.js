@@ -44,7 +44,7 @@ var kayitliDurum = {
         "mahalle": "Cücük",
         "DHTA": 2,
         "ilisik": 0,
-        "tescilli": 0,
+        "tescilli": 5,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -52,6 +52,24 @@ var kayitliDurum = {
         "coordinates": [
           33.100163178018136,
           40.191035680128735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Akyurt",
+        "mahalle": "Çam",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 9,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.17033676624112,
+          40.13854352658857
         ]
       }
     },
@@ -131,6 +149,24 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Akyurt",
+        "mahalle": "Uzunlar",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 3,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.002384909269004,
+          40.069198126079336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Akyurt",
         "mahalle": "Yeşiltepe",
         "DHTA": 0,
         "ilisik": 0,
@@ -167,24 +203,6 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Altındağ",
-        "mahalle": "FevziPaşa",
-        "DHTA": 0,
-        "ilisik": 0,
-        "tescilli": 1,
-        "program": "Program Dışı"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          32.843066740476125,
-          39.94213260157568
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ilce": "Altındağ",
         "mahalle": "Doğantepe",
         "DHTA": 0,
         "ilisik": 0,
@@ -203,10 +221,64 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Altındağ",
+        "mahalle": "Doğu",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 2,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.89718507862895,
+          39.981829206715815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Altındağ",
+        "mahalle": "FevziPaşa",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.843066740476125,
+          39.94213260157568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Altındağ",
+        "mahalle": "Karacaviran (Karacaören)",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 9,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.924475946401806,
+          40.032291386964324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Altındağ",
         "mahalle": "Solfasol",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 441,
+        "tescilli": 476,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -214,6 +286,24 @@ var kayitliDurum = {
         "coordinates": [
           32.91007337512249,
           39.98169060097128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Bala",
+        "mahalle": "Beynam",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.89393024245719,
+          39.692970880208854
         ]
       }
     },
@@ -239,6 +329,42 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Çankaya",
+        "mahalle": "Alacaatlı",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.677638485717324,
+          39.847305715356285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çankaya",
+        "mahalle": "Çayyolu",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.69780413961144,
+          39.88350710204022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çankaya",
         "mahalle": "Dikmen",
         "DHTA": 0,
         "ilisik": 0,
@@ -257,6 +383,42 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Çankaya",
+        "mahalle": "İmrahor",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.87947655680729,
+          39.905415412961155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çankaya",
+        "mahalle": "Kırkkonaklar",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.887473732199155,
+          39.8888928151432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çankaya",
         "mahalle": "Malazgirt",
         "DHTA": 0,
         "ilisik": 0,
@@ -268,6 +430,24 @@ var kayitliDurum = {
         "coordinates": [
           32.56469769499322,
           39.95505051750553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çankaya",
+        "mahalle": "Mühye",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 3,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.869447673306794,
+          39.86168879658167
         ]
       }
     },
@@ -419,6 +599,24 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Çubuk",
+        "mahalle": "Saraycık",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.98356874253448,
+          40.33591556025795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çubuk",
         "mahalle": "Sarısu",
         "DHTA": 0,
         "ilisik": 0,
@@ -464,8 +662,26 @@ var kayitliDurum = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.04937013144611, 
+          33.04937013144611,
           40.30950728454906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çubuk",
+        "mahalle": "Tuğla",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 2,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.90970704869481,
+          40.22886970205419
         ]
       }
     },
@@ -484,6 +700,24 @@ var kayitliDurum = {
         "coordinates": [
           32.8189917749628,
           40.23454250679909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Çubuk",
+        "mahalle": "Yavuz Selim",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.042771386114964,
+          40.24566788047337
         ]
       }
     },
@@ -544,6 +778,24 @@ var kayitliDurum = {
     {
       "type": "Feature",
       "properties": {
+        "ilce": "Çubuk",
+        "mahalle": "Yukarı Çavundur",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.05700394407983,
+          40.38607325905048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "ilce": "Elmadağ",
         "mahalle": "Edige",
         "DHTA": 0,
@@ -563,6 +815,24 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Elmadağ",
+        "mahalle": "Havuzbaşı (Hasanoğlan)",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 40,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.187299987498754,
+          39.99932447868422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Elmadağ",
         "mahalle": "Karacahasan",
         "DHTA": 4,
         "ilisik": 0,
@@ -574,6 +844,60 @@ var kayitliDurum = {
         "coordinates": [
           33.22224536398665,
           39.85576006030354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Etimesgut",
+        "mahalle": "Bağlıca",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 3,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.63811722649595,
+          39.89589039419654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Etimesgut",
+        "mahalle": "Etimesgut",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.65898446113213,
+          39.94622341994358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Etimesgut",
+        "mahalle": "Topçu",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.61750156533267,
+          39.95049813216593
         ]
       }
     },
@@ -779,6 +1103,42 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "KahramanKazan",
+        "mahalle": "Fatih",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.68347359166834,
+          40.2353273078329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "KahramanKazan",
+        "mahalle": "İmrendi",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.668821613703514,
+          40.13686496595167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "KahramanKazan",
         "mahalle": "Kılıçlar",
         "DHTA": 0,
         "ilisik": 0,
@@ -815,10 +1175,28 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "KahramanKazan",
+        "mahalle": "Soğulcak (Soğucak)",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.62480285368197,
+          40.24300294146116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "KahramanKazan",
         "mahalle": "Tekke",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 379,
+        "tescilli": 497,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -869,6 +1247,24 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Kalecik",
+        "mahalle": "Samanlık",
+        "DHTA": 0,
+        "ilisik": 1,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.47252228106632,
+          40.02420706116395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Kalecik",
         "mahalle": "Termeyenice (Yurtyenice)",
         "DHTA": 0,
         "ilisik": 0,
@@ -878,8 +1274,8 @@ var kayitliDurum = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.43449241455716,
-          40.34538002793037
+          33.43384096472102,
+          40.34434035707575
         ]
       }
     },
@@ -890,7 +1286,7 @@ var kayitliDurum = {
         "mahalle": "Ayvalı",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 1,
+        "tescilli": 2,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -924,7 +1320,7 @@ var kayitliDurum = {
       "properties": {
         "ilce": "Keçiören",
         "mahalle": "Bağlum",
-        "DHTA": 2,
+        "DHTA": 3,
         "ilisik": 0,
         "tescilli": 11,
         "program": "Program Dışı"
@@ -943,7 +1339,7 @@ var kayitliDurum = {
         "ilce": "Keçiören",
         "mahalle": "Çalseki",
         "DHTA": 0,
-        "ilisik": 2,
+        "ilisik": 1,
         "tescilli": 0,
         "program": "Program Dışı"
       },
@@ -968,8 +1364,8 @@ var kayitliDurum = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.43449241455716,
-          40.34538002793037
+          32.8190287756345,
+          40.17779212688048
         ]
       }
     },
@@ -1070,7 +1466,7 @@ var kayitliDurum = {
         "mahalle": "Yükseltepe",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 1,
+        "tescilli": 2,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1121,10 +1517,28 @@ var kayitliDurum = {
       "type": "Feature",
       "properties": {
         "ilce": "Mamak",
+        "mahalle": "Kartaltepe",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.900555202614925,
+          39.927525036762525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Mamak",
         "mahalle": "Nenek",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 20,
+        "tescilli": 22,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1132,6 +1546,60 @@ var kayitliDurum = {
         "coordinates": [
           33.04192985086537,
           39.95372018824954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Mamak",
+        "mahalle": "Odabaşı",
+        "DHTA": 4,
+        "ilisik": 0,
+        "tescilli": 0,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.107963362123535,
+          39.95330133745258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Mamak",
+        "mahalle": "Şahap Gürler",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.95181483788811,
+          39.90605916221234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Pursaklar ",
+        "mahalle": "Kurusarı",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.92754309086446,
+          39.90605916221234
         ]
       }
     },
@@ -1160,7 +1628,7 @@ var kayitliDurum = {
         "mahalle": "Saray (Belde)",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 22,
+        "tescilli": 27,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1174,11 +1642,29 @@ var kayitliDurum = {
     {
       "type": "Feature",
       "properties": {
+        "ilce": "Pursaklar",
+        "mahalle": "Sirkeli (Belde)",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.845594903095964,
+          40.14259263443251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "ilce": "Sincan",
         "mahalle": "Atatürk (Yenikent)",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 63,
+        "tescilli": 129,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1186,6 +1672,24 @@ var kayitliDurum = {
         "coordinates": [
           32.527362980559495,
           40.00132779903486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Sincan",
+        "mahalle": "M.Kemal",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 2,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.51405322150341,
+          39.99843791829851
         ]
       }
     },
@@ -1232,7 +1736,7 @@ var kayitliDurum = {
         "mahalle": "Atatürk Orman Çiftliği",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 1,
+        "tescilli": 4,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1240,6 +1744,24 @@ var kayitliDurum = {
         "coordinates": [
           32.80052819677206,
           39.935070328321416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Yenimahalle",
+        "mahalle": "Ergazi",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 1,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.710243880164164,
+          39.95482469264876
         ]
       }
     },
@@ -1286,7 +1808,7 @@ var kayitliDurum = {
         "mahalle": "İvedik",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 1,
+        "tescilli": 2,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1340,7 +1862,7 @@ var kayitliDurum = {
         "mahalle": "Susuz",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 6,
+        "tescilli": 7,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1376,7 +1898,7 @@ var kayitliDurum = {
         "mahalle": "Yakacık",
         "DHTA": 0,
         "ilisik": 0,
-        "tescilli": 1,
+        "tescilli": 24,
         "program": "Program Dışı"
       },
       "geometry": {
@@ -1384,6 +1906,24 @@ var kayitliDurum = {
         "coordinates": [
           32.77019254753075,
           40.042376660794545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Yenimahalle",
+        "mahalle": "Yakacık-İmar",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 6,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.78471836145903,
+          40.03756987917611
         ]
       }
     },
@@ -1402,6 +1942,24 @@ var kayitliDurum = {
         "coordinates": [
           32.779067972963496,
           39.98356968860123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ilce": "Yenimahalle",
+        "mahalle": "Yuva",
+        "DHTA": 0,
+        "ilisik": 0,
+        "tescilli": 7,
+        "program": "Program Dışı"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.72578601400753,
+          40.02008807824971
         ]
       }
     }
